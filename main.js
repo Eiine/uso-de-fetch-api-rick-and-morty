@@ -27,14 +27,15 @@ async function insertarPersonajes(){
     
     paraInsertar.forEach(personaje => {
         let tpl=`
-        <div id="personajes">
-    <img src="${personaje.image}" alt="">
+        <div id="personajes" >
+    <img src="${personaje.image}"  alt="">
     <p>${personaje.name}</p>
     <p>${personaje.gender}</p>
     <p>${personaje.location.name}</p>
     <p>${personaje.origin.name}</p>
     <p>${personaje.species}</p>
     <p>${personaje.status}</p>
+    </div>
     </div>
     `
     contenedor.innerHTML+=tpl
