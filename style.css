@@ -31,15 +31,20 @@
     height: 250px;
     width: 130px;
     font-size: 11px;
-    padding: 5px;
-}     
+    padding: 10px;
+    
+}    
+
+#personajes:hover{
+  margin-top: -10px;
+}
 .contenedor{
   margin-bottom: 200px;
 }
 
 img{
     
-    
+    margin-left: 10px;
     height: 70px;
     width: 100px;
     border-radius: 5%;

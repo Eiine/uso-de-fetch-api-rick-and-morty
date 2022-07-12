@@ -29,12 +29,12 @@ async function insertarPersonajes(){
         let tpl=`
         <div id="personajes" >
     <img src="${personaje.image}"  alt="">
-    <p>${personaje.name}</p>
-    <p>${personaje.gender}</p>
-    <p>${personaje.location.name}</p>
-    <p>${personaje.origin.name}</p>
-    <p>${personaje.species}</p>
-    <p>${personaje.status}</p>
+    <p>Name: ${personaje.name}</p>
+    <p>Gender: ${personaje.gender}</p>
+    <p>Location: ${personaje.location.name}</p>
+    <p>Origin: ${personaje.origin.name}</p>
+    <p>Spice: ${personaje.species}</p>
+    <p>Status: ${personaje.status}</p>
     </div>
     </div>
     `
@@ -56,6 +56,7 @@ siguiente.addEventListener("click",()=>{
     eliminar()
     pagina++
     insertarPersonajes()
+    window.scroll(0,0)
 })
 
 anterior.addEventListener("click",()=>{
@@ -65,6 +66,7 @@ anterior.addEventListener("click",()=>{
         eliminar()
         pagina--
         insertarPersonajes()
+        window.scroll(0,0)
     }
     
 })
