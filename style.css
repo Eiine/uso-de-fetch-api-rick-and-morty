@@ -18,7 +18,7 @@
   grid-template-rows: 100px 100px 100px 100px 100px;
   grid-column-gap: 60px;
   grid-row-gap: 40%;
-  word-break:break-all;
+  
 }
 #personajes{
     position: relative;
@@ -74,4 +74,32 @@ img{
   height: 30px;
   position: relative;
   top: -10px;
+}
+
+@media (max-width: 600px) {
+  #contenedor{
+    grid-template-columns: 100px ;
+    grid-template-rows: 180px ;
+    grid-row-gap: 100px;
+  }
+  
+  #personajes{
+    position: flex;
+     margin-bottom: -100px;
+    width: 500px;
+    text-align: center;    
+    }
+    
+    img{
+      
+      height: 100px;
+    }
+    
+    #personajes:hover{
+      margin-top:-1 ;
+      margin-left: -5px;
+      z-index:1;
+      background-color: black;
+      color: white;
+    }
 }
