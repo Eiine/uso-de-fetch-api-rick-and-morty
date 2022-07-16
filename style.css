@@ -102,4 +102,12 @@ img{
       background-color: black;
       color: white;
     }
+    .botones{
+  
+      position: relative;
+      text-align: center;
+      top: 150px;
+      
+    }
+    
 }
