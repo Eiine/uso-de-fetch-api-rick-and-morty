@@ -14,7 +14,7 @@
 #contenedor{
   display: grid;
   
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 130px 130px 130px 130px 130px 130px;
   grid-template-rows: 100px 100px 100px 100px 100px;
   grid-column-gap: 60px;
   grid-row-gap: 40%;
@@ -22,7 +22,7 @@
 }
 #personajes{
     position: relative;
-    margin-left: 25px;
+    margin-left: 100px;
     margin-bottom: 20px;
     border: 2px darkgray solid;
     box-shadow: 3px 0px 10px;
@@ -61,20 +61,6 @@ img{
   
 }
 
-#anterior, #siguiente{
-  border-radius: 4px;
-  border: 1px solid darkgray;
-}
-#anterior:hover{
-  height: 30px;
-  position: relative;
-  top: -10px;
-}
-#siguiente:hover{
-  height: 30px;
-  position: relative;
-  top: -10px;
-}
 
 @media (max-width: 600px) {
   #contenedor{
@@ -84,8 +70,9 @@ img{
   }
   
   #personajes{
+  
     position: flex;
-     margin-bottom: -100px;
+    margin-bottom: -100px;
     width: 300px;
     text-align: center;    
     }
@@ -109,5 +96,13 @@ img{
       top: 150px;
       
     }
-    
+    #anterior:hover{
+      background-color: black;
+      color: white;
+    }
+
+    #siguiente:hover{
+      background-color: black;
+      color: white;
+    }
 }
